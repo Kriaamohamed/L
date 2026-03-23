@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kriaa Services | خدمات قريعة</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h2 class="logo">KRIAA</h2>
+        <div class="social-top">
+            <a href="https://www.instagram.com/kriaa_network_pro?igsh=MW9tajZxNHF1emVhcQ%3D%3D&utm_source=qr" target="_blank" class="insta-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+    <nav>
+        <button onclick="show('home')"><i class="fas fa-home"></i> الرئيسية</button>
+        <button onclick="show('social')"><i class="fas fa-rocket"></i> الخدمات</button>
+        <button onclick="show('thumb')"><i class="fas fa-paint-brush"></i> تصاميم</button>
+    </nav>
+</header>
+
+<section id="home" class="page active">
+    <div class="hero">
+        <div class="hero-content">
+            <div class="main-icon-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="Logo" class="main-logo">
+            </div>
+            <h1>ارتقِ بظهورك <span class="highlight">الرقمي</span></h1>
+            <p>أفضل الخدمات لزيادة التفاعل على منصات التواصل الاجتماعي بجودة تونسية احترافية 🇹🇳</p>
+            <button class="btn main-btn pulse" onclick="show('social')">ابدأ رحلة النجاح الآن</button>
+        </div>
+    </div>
+</section>
+
+<section id="social" class="page">
+    <h2 class="section-title">📊 خدمات التواصل الاجتماعي</h2>
+    <div class="cards">
+        
+        <div class="card">
+            <div class="badge">الأكثر طلباً</div>
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Insta">
+            <h3>متابعين انستا</h3>
+            <p class="count">1000 متابع</p>
+            <p class="price">10DT</p>
+            <div class="btn-group">
+                <button class="buy-btn" onclick="order('1000 Insta Followers')">شراء</button>
+                <button class="desc-btn" onclick="desc('متابعين بجودة ممتازة مع ضمان عدم النقصان')"><i class="fas fa-info-circle"></i></button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" alt="Reels">
+            <h3>مشاهدات ريلز</h3>
+            <p class="count">1000 مشاهدة</p>
+            <p class="price">1DT</p>
+            <div class="btn-group">
+                <button class="buy-btn" onclick="order('1000 Insta Reels Views')">شراء</button>
+                <button class="desc-btn" onclick="desc('سرعة فائقة في التنفيذ وتدعم الوصول للاكسبلور')"><i class="fas fa-info-circle"></i></button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+            <h3>متابعين تيك توك</h3>
+            <p class="count">1000 متابع</p>
+            <p class="price">15DT</p>
+            <div class="btn-group">
+                <button class="buy-btn" onclick="order('1000 TikTok Followers')">شراء</button>
+                <button class="desc-btn" onclick="desc('دعم حسابك للانتشار وتحقيق شروط الأرباح')"><i class="fas fa-info-circle"></i></button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+            <h3>مشتركين يوتيوب</h3>
+            <p class="count">1000 مشترك</p>
+            <p class="price">20DT</p>
+            <div class="btn-group">
+                <button class="buy-btn" onclick="order('1000 YouTube Subs')">شراء</button>
+                <button class="desc-btn" onclick="desc('مشتركين حقيقيين لتفعيل قناتك')"><i class="fas fa-info-circle"></i></button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="thumb" class="page">
+    <h2 class="section-title">🎨 قسم التصميم الاحترافي</h2>
+    <div class="card premium-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3502/3502688.png" alt="Design">
+        <h3>YouTube Thumbnail</h3>
+        <p class="price">15DT</p>
+        <p>تصميم صورة مصغرة تجذب المشاهدات وتزيد من نسبة النقر</p>
+        <button class="buy-btn wide-btn" onclick="order('Thumbnail Design')">اطلب تصميمك الآن</button>
+    </div>
+</section>
+
+<div class="floating-actions">
+    <a href="https://www.instagram.com/kriaa_network_pro?igsh=MW9tajZxNHF1emVhcQ%3D%3D&utm_source=qr" target="_blank" class="insta-float"><i class="fab fa-instagram"></i></a>
+    <div class="whatsapp-float" onclick="whatsapp()"><i class="fab fa-whatsapp"></i></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
